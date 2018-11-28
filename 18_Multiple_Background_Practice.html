@@ -1,0 +1,62 @@
+<!-- ----------------------------------------------------------------------
+Program       :Multiple Background Paractice
+Date          :07-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiple Background</title>
+    <style>
+        .background
+        {
+            background:url(1.jpg) center center fixed,url(3.jpg) no-repeat ;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size: cover;
+            height: 300px;
+        
+            /* z-index: 0; */
+              margin-left: -33.33%; 
+            margin-right: -33.33%; 
+           
+        } 
+        .bgimage
+        {
+            background-image:url(4.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            color: wheat;
+            width: 100%;
+            height: 500px;
+        }
+        .div1
+        {
+            height:400px;
+            background-color: rgba(175, 178, 110,0.6);    
+            z-index: -1;
+            text-align: center;
+            line-height: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple Background</h1>
+    <div class="background">
+     </div>
+     <div class="bgimage">
+     ff
+      </div>
+      <div class="div1">
+          <h1 style="color:black">SSPatil Creations
+             
+          </h1>
+      </div>        
+</body>
+</html>

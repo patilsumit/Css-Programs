@@ -1,0 +1,89 @@
+<!-- ----------------------------------------------------------------------
+Program       :Medi Query  Practice
+Date          :11-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query</title>
+    <style>
+        img
+        {
+            width:960px;
+        }
+        #container
+        {
+            width:96px;
+            margin: 0px auto;
+        }
+        #left-column
+        {
+            width:700px;
+            float: left;
+            background: blue;
+        }
+        #right-column
+        {
+            width: 260px;
+            float: left;
+            background: orangered;
+        }
+        /* For Mobile*/
+        @media screen and (max-width:959px)
+        {
+            #container
+            {
+                width: 100%;
+            }
+            #left-column
+            {
+                width:70%; 
+            }
+            #right-column
+            {
+                width: 30%;
+            }
+            img
+            {
+                width:100%; 
+            }
+        }
+        /* For Tablet */
+        @media screen and (max-width:640px)
+        {
+            #left-column
+            {
+                width:70%; 
+            }
+            #right-column
+            {
+                width: 30%;
+            }
+            
+        }
+        @media screen and (max-width:320px)
+        {
+           #container
+            {
+               width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="adult-business-businesswoman-265036.jpg">
+        <section id="left-column">
+            This Section Is left-column
+        </section>    
+        <aside id="right-column">
+            This is the right column and will make it responsive
+        </aside>    
+    </div>
+</body>
+</html>

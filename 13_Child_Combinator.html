@@ -1,0 +1,69 @@
+<!-- ----------------------------------------------------------------------
+Program       :Child Selector
+Date          :04-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Child Selector</title>
+    <style>
+        div>ul
+        {
+            color: green;
+        }
+        div>nav>ul
+        {
+            color: red;
+        }
+        div~p
+        {
+            background-color: pink;
+        }
+        p::first-letter
+        {
+            color: red;
+            font-size: 3em;
+        }
+    div
+        {
+            border: 10px dotted;
+            background-image:url(background-image.jpg);
+            background-size:250px;
+            background-repeat: no-repeat;
+            
+            /* background-position: center right; */
+              background-origin:border-box;
+                 /* border box contain border put on image
+                    padding box outer of image 
+                    content image inner image*/
+                      /* background-clip:content-box; */
+                     background-color: pink; 
+                    padding:40px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>KitKat</li>
+            <li>Dairy Milk</li>
+            <li>6 Star</li>
+         </ul>
+         <nav>
+         <ul>
+                <li>KitKat</li>
+                <li>Dairy Milk</li>
+                <li>6 Star</li>
+             </ul>
+          </nav>  
+             
+    </div>
+    <p>Sumit Patil</p>     
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum aut voluptatem nostrum quia pariatur labore nesciunt maiores voluptatibus quod vero perferendis hic ex quisquam quidem corrupti optio atque, repellat esse.    </p>
+</body>
+</html>

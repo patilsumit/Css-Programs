@@ -1,0 +1,49 @@
+<!-- ----------------------------------------------------------------------
+Program       :Css Styles Images
+Date          :10-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styles Images</title>
+    <style>
+    img.img1
+    {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 300px;
+    }
+    img.img1:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+img.img2
+{
+    max-width:100%;
+    height: auto; 
+}
+
+    </style>
+</head>
+<body>
+    <h1>rounded Image</h1>
+    <img src="2.jpg" height="300px" width="300px" style="border-radius:8px ">
+    <h1>circle Image</h1>
+    <img src="2.jpg" height="300px" width="300px" style="border-radius:50% ">
+    <h1>Thumbnail Images</h1>
+    <img src="4.jpg" height="300px" width="300px" class="img1">
+    <h1>Thumbnail Image wit link with hover</h1>
+    <a href="4.jpg" target="_blank"> 
+    <img src="4.jpg" height="300px" width="300px" class="img1" >
+    </a>
+    <h1>Responsive Image</h1>
+    <img src="2.jpg" height="300" width="1000" class="img2" >
+    <h1>Center Image</h1>
+    <img src="2.jpg" width="50%" style="display: block;margin-left: auto;margin-right: auto" >
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!-- ----------------------------------------------------------------------
+Program       :Grid Layout Classroom Practice
+Date          :18-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classroom Practice</title>
+    <style>
+     
+      .grid-container
+        {
+                display: grid;
+                /* grid-gap:50px 50px; */
+                /* grid-template-columns:auto auto auto auto auto auto auto auto auto auto auto auto; */
+                grid-template-columns: repeat(12,1fr);
+                background-color: #808080;
+                /* padding: 10px;   */
+                width:100%;
+        }
+
+     .grid-container>div
+        {
+            background-color: rgba(242, 242, 242, 0.8);
+            border:1px solid rgba(0,0,0,0.8);
+            /* padding: 10px; */
+            /* font-size: 30px; */
+            text-align: center;
+             
+             
+        }
+        .grid-column-span
+        {
+            grid-column-start: 1; 
+            grid-column-end: 13; 
+        }
+        .grid-column-span1
+        {
+            grid-column-start:1;
+            grid-column-end: 7; 
+        }
+        .grid-column-span2
+        {
+            grid-column-start:7;
+            grid-column-end: 13; 
+        }
+        .grid-column-span3
+        {
+            grid-column-start:1;
+            grid-column-end: 5; 
+        }
+        .grid-column-span4
+        {
+            grid-column-start:5;
+            grid-column-end: 9; 
+        }
+        .grid-column-span5
+        {
+            grid-column-start:9;
+            grid-column-end: 13; 
+        }
+        .grid-column-span6
+        {
+            grid-column-start:1;
+            grid-column-end: 4;  
+        }
+        .grid-column-span7
+        {
+            grid-column-start:4;
+            grid-column-end: 7;  
+        }
+        .grid-column-span8
+        {
+            grid-column-start:7;
+            grid-column-end: 10;  
+        }
+        .grid-column-span9
+        {
+            grid-column-start:10;
+            grid-column-end: 13;  
+        }
+        .grid-column-span10
+        {
+            grid-column-start:1;
+            grid-column-end: 3;  
+        }
+        .grid-column-span11
+        {
+            grid-column-start:3;
+            grid-column-end: 5;  
+        }
+        .grid-column-span12
+        {
+            grid-column-start:5;
+            grid-column-end: 7;  
+        }
+        .grid-column-span13
+        {
+            grid-column-start:7;
+            grid-column-end: 9;  
+        }
+        .grid-column-span14
+        {
+            grid-column-start:9;
+            grid-column-end: 11;  
+        }
+        .grid-column-span15
+        {
+            grid-column-start:11;
+            grid-column-end: 13;  
+        }
+        
+        @media screen and (max-width:600px)
+        {
+            .grid-container {
+                background-color: blueviolet;
+                grid-template-columns: repeat(autofit,minmax(100px,1fr));
+            }
+           
+            .grid-column-span,.grid-column-span1,.grid-column-span2,.div1
+            {
+               grid-column-start:1;
+               grid-column-end: 13; 
+            } 
+            .grid-column-span3, .grid-column-span5, .grid-column-span7, .grid-column-span9, .grid-column-span11, .grid-column-span13
+            {
+                grid-column-start:1;
+                grid-column-end: 7; 
+            }
+            .grid-column-span4, .grid-column-span6, .grid-column-span8, .grid-column-span10, .grid-column-span12, .grid-column-span14, .grid-column-span15
+            {
+                grid-column-start:7;
+                grid-column-end: 13; 
+            }
+           .grid-column-span15
+           {
+               grid-column-start:1;
+               grid-column-end:2;  
+           }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-column-span">1</div>
+        <div class="grid-column-span1">2</div>
+        <div class="grid-column-span2">3</div>
+        <div class="grid-column-span3">4</div>
+        <div class="grid-column-span4">5</div>
+        <div class="grid-column-span5">6</div>
+        <div class="grid-column-span6">7</div>
+        <div class="grid-column-span7">8</div>
+        <div class="grid-column-span8">9</div>
+        <div class="grid-column-span9">10</div>
+        <div class="grid-column-span10">11</div>
+        <div class="grid-column-span11">12</div>
+        <div class="grid-column-span12">13</div>
+        <div class="grid-column-span13">14</div>
+        <div class="grid-column-span14">15</div>
+        <div class="grid-column-span15">16</div>
+        <div class="grid-column-span16">17</div>
+        <div class="grid-column-span17">18</div>
+        <div class="grid-column-span18">19</div>
+        <div class="div">20</div>
+        <div class="div">21</div>
+        <div class="div">22</div>
+        <div class="div">23</div>
+        <div class="div">24</div>
+        <div class="div">25</div>
+        <div class="div">26</div>
+        <div class="div">27</div>
+        <div class="div1">28</div>
+
+
+
+    </div>
+</body>
+</html>

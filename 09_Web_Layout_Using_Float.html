@@ -1,0 +1,147 @@
+<!-- ----------------------------------------------------------------------
+Program       :Position On the Text Practice
+Date          :2-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Layout</title>
+    <style>
+            * {
+                box-sizing: border-box;
+            }
+            div~p
+            {
+                background-color: aqua;
+            }
+            .header, .footer {
+                background-color: grey;
+                color: white;
+                padding: 15px;
+            }
+            .column {
+                float: left;
+                padding: 15px;
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .menu {
+                width: 25%;
+            }
+            .content {
+                width: 75%;
+            }
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .menu li {
+                padding: 8px;
+                margin-bottom: 8px;
+                background-color: #33b5e5;
+                color: #ffffff;
+            }
+            .menu li:hover {
+                background-color: #0099cc;
+            }
+           
+            span.a {
+    display: inline;
+    
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+span
+{
+    display: none;
+   background-color: gray;
+   padding: 50px;
+}
+#psd:hover span
+{
+    display: block;
+    
+}
+            </style>
+</head>
+<body>
+        <div class="header">
+                <h1>Chania</h1>
+              </div>
+ 
+  </div>
+ 
+              <p>sibling node aumit patil</p>
+              <div class="clearfix">
+                <div class="column menu">
+                  <ul>
+                    <li>The Flight</li>
+                    <li>The City</li>
+                    <li>The Island</li>
+                    <li>The Food</li>
+                  </ul>
+                </div>
+              
+                <div class="column content">
+                  <h1>The City</h1>
+                  <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                  <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+                </div>
+              </div>
+              
+              <div class="footer">
+                <p>Footer Text</p>
+              </div>
+              <h1>Display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+ <div id="psd">
+     Sumit Patil Hover Me
+     <span>Hii Sharada How Are You!</span>
+ </div>
+ <h1>Dropdown Hovarble</h1>
+ <div class="dropdown">
+    <span>Mouse over me</span>
+    <div class="dropdown-content">
+      <p>Hello World!</p>
+    </div>
+  </div>
+  
+</body>
+</html>

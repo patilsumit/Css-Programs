@@ -1,0 +1,59 @@
+<!-- ----------------------------------------------------------------------
+Program       :3D Transform 2
+Date          :21-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Transform</title>
+    <style>
+        .container
+        {
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            /* flat | preserved-3d*/
+            transform-style: preserve-3d;   
+        }
+        .box
+        {
+            width:150px;
+            height:150px;
+            background-color: gray;
+            line-height: 150px;
+            transition:all 1.6s;
+            z-index:0;    
+        }
+        .move-a:hover
+        {
+            /*transform:translate(30px) translate(200px);*/
+            /* translatez(-10px); */
+            transform: translate3d(30px,200px,-10px);
+            background-color: rgba(128,0,0,0.5);
+            z-index:1; 
+        }
+        .move-b:hover
+        {
+            /* transform:translate(30px) translate(200px) translatez(-10px); */
+            
+            transform: translate3d(100px,-50px,200px);
+            background-color: rgba(128,0,0,0.5);
+            z-index:2; 
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="box move-a">
+           Moved A box
+         </div><br>
+         <div class="box">Static box</div><br>
+         <div class="box move-b">Moved B box</div>
+     </div>
+</body>
+</html>

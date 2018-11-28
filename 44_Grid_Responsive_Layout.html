@@ -1,0 +1,82 @@
+<!-- ----------------------------------------------------------------------
+Program       :Grid Layout Responsive Practice
+Date          :19-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+     <style>
+         *
+         {
+             box-sizing: border-box;
+         }
+         .header
+         {
+             grid-area: header;
+         }
+         .navmenu
+         {
+             grid-area:navmenu; 
+         }
+         .main
+         {
+             grid-area:main; 
+         }
+         .footer
+         {
+            grid-area:footer; 
+         }
+         .grid-container
+         {
+             display:grid;
+             grid-gap: 20px 20px;
+             grid-template-areas:"header header" "navmenu navmenu" "main main";
+             background-color: #808080;
+             padding:10px;   
+             
+         }
+         .grid-container>*
+         {
+             grid-column:1/span 2; 
+         }
+         /*Set Property for child items(child)*/
+         .grid-container>*
+         {
+             background-color: rgba(242, 242, 242,0.8);
+             border:1px solid rgba(0, 0, 0,0.8);
+             padding:20px;
+             font-size:2vw;
+             text-align:center;    
+         }
+
+         /* Media Query Apply*/
+         @media (min-width:700px)
+         {
+             .navmenu
+             {
+
+                /* grid-area syntax: row / start-column / row-end / */
+                 grid-area:2 / 1 / 4 / 2;  
+             }
+             .main
+             {
+                 grid-area: 2 / 2 / 4 / 3;
+             }
+         } 
+     </style>
+</head>
+<body>
+     <div class="grid-container">
+          <div class="header">Header</div>
+          <div class="navmenu">Nav-Menu</div>
+          <div class="main">Main</div>
+          <div class="footer">Footer</div>
+     </div>
+</body>
+</html>

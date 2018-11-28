@@ -1,0 +1,155 @@
+<!-- ----------------------------------------------------------------------
+Program       :Css 2D Transforms
+Date          :09-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2D Transform</title>
+    <style>
+        .div1
+        {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+           -ms-transform: translate(40px,50px); /* IE 9 */
+           -webkit-transform: translate(40px,50px); /* Safari */
+            transform: translate(40px,50px); /* Standard syntax */
+        }
+        .div2 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+}
+.div3
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    -ms-transform: scale(2,3); /* IE 9 */
+    -webkit-transform: scale(2,3); /* Safari */
+    transform: scale(2,3); /* Standard syntax */
+}
+.div4
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg); /* Standard syntax */
+}
+.div5
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color:sienna;
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari */
+    transform: skewY(20deg); /* Standard syntax */
+}
+.div6
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color:powderblue;
+    -ms-transform: skew(20deg, 10deg); /* IE 9 */
+    -webkit-transform: skew(20deg, 10deg); /* Safari */
+    transform: skew(20deg, 10deg);
+}
+.div7
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color:powderblue;
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+    
+}
+.div8
+{
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color:powderblue;
+    -ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+    -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); /* Safari */
+    transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */
+}
+    </style>
+</head>
+<body><center>
+    <h1>2D TransForm</h1>
+    <h2>CSS transforms allow you to translate, rotate, scale, and skew elements.</h2></center>
+    <ul>
+        <li>translate</li>
+        <li>rotate</li>
+        <li>scale</li>
+        <li>skewX</li>
+        <li>skewY</li>
+        <li>matrix</li>
+    </ul>    
+
+    <h1>Translate Method</h1>
+    <div class="div1">
+            This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+    <h1>Rotate </h1>
+    <div class="div2">
+            This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+    <div id="myDiv">
+            This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+    <h1>Scale Method increse and decrease the size</h1>
+    <div class="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque eos qui est cumque officiis expedita iste ipsam.
+    </div>    
+    <h1>skewX Method</h1>
+    <h2>he skewX() method skews an element along the X-axis by the given angle.</h2>
+    <div class="div4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, laboriosam.
+    </div>
+    <h1>skewY() Method</h1>
+    <div class="div5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, laboriosam.
+    </div>
+    <h1>skew() Method</h1>
+    <h2>The skew() method skews an element along the X and Y-axis by the given angles.</h2>
+    <div class="div6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, laboriosam.
+    </div>
+    <h1>Matrix Method</h1>
+    <h2>The matrix() method combines all the 2D transform methods into one.</h2>
+    <div class="div7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, laboriosam.
+    </div>
+    <div class="div8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, laboriosam.
+    </div>     
+</body>
+</html>

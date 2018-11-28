@@ -1,0 +1,255 @@
+<!-- ----------------------------------------------------------------------
+Program       :Css Text Shadow
+Date          :08-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Shadow</title>
+    <style>
+    .div1
+    {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 15px 10px gray;
+        opacity: 0.8;
+    }
+    .div2
+    {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px 10px gray;
+        opacity: 0.8;
+    } 
+    #boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+/* Make the image fit the box */
+#boxshadow img {
+    width: 100%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
+
+#boxshadow::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+div.card {
+  width: 250px;
+  float: left;
+  border:1px solid;
+  margin:1em; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+div.container
+{
+    padding:10px; 
+}
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin:1em; 
+  float: left;
+}
+div.polaroid:hover
+{
+    transform: scale(0.5);
+    transition: 0.5s all ease-out;
+}
+div.test {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+}
+
+div.test:hover {
+    text-overflow: inherit;
+    overflow: visible;
+}
+p.test {
+    width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+p.tt1 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.tt2 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+.sh1
+{
+    text-shadow:-20px -20px 4px grey; 
+    font-size:10em; 
+}
+.sh2
+{
+    text-shadow:20px -20px 4px grey; 
+    font-size:10em;
+}
+.sh3{
+    text-shadow:20px 20px 4px grey; 
+    font-size:10em;
+}
+.sh4
+{
+    text-shadow:-20px 20px 4px grey; 
+    font-size:10em;
+}
+
+.sh5
+{
+    box-shadow:10px 10px grey; 
+}
+.sh6
+{
+    box-shadow: 10px 10px 20px grey;
+}
+.classbs
+{
+      width:300px;
+      height:100px;
+      padding:15px;
+      background-color: cyan;
+      text-align:left;   
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="text-shadow:2px 2px ">Sumit Patil</h1>
+    <h1 style="text-shadow:2px 2px red">Sumit Patil</h1>
+    <h1 style="text-shadow:2px 2px 5px red">Sumit Patil</h1>
+    <h1 style="text-shadow:2px 2px 4px #000000;color: white">Sumit Patil</h1>
+    <h1 style="text-shadow: 0 0 3px #FF0000">Sumit Patil</h1>
+    <h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">Sumit Patil</h1>
+    <h1 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;color: wheat">Sumit Patil</h1>
+    <h1 style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;color:yellow">Sumit Patil</h1>
+
+    <h1 style="padding:10px;background-color:black;color: white;text-align: center">CSS box-shadow Property</h1>
+    <div class="div1">
+       Sumit Patil 
+    </div>
+    <h2>Blur Shadow</h2>
+    <div class="div2">
+            Sumit Patil 
+    </div>
+    <h2>Box Shadow Using Psudo element</h2>
+    <div id="boxshadow">
+            <img src="apple-black-and-white-black-and-white-169573.jpg" alt="Norway" width="600" height="400">
+    </div>
+    <h1>Text Card</h1>
+     <div class="card">
+         <div class="header">
+          <h1>Sharada</h1>
+         </div>
+
+         <div class="container">
+                <p>January 1, 2016</p>
+              </div>
+     </div>
+     <div class="card">
+            <div class="header">
+             <h1>Patil</h1>
+            </div>
+   
+            <div class="container">
+                   <p>January 1, 2016</p>
+                 </div>
+        </div><br>
+   <h1 style="clear: left;">Polaroid Images / Cards</h1>
+   <div class="polaroid">
+        <img src="pexels-photo-264109 (1).jpeg" alt="Norway">
+        <div class="container">
+          <p>SSPatil Creation</p>
+        </div>
+      </div>   
+      <div class="polaroid">
+            <img src="adult-business-businesswoman-265036.jpg" alt="Norway" width="250px" height="250px">
+            <div class="container">
+              <p>SSPatil Creation</p>
+            </div>
+          </div>
+          <div class="polaroid">
+                <img src="bride-celebration-ceremony-1199605.jpg" alt="Norway" width="250px" height="250px">
+                <div class="container">
+                  <p>SSPatil Creation</p>
+                </div>
+              </div>
+
+              <p>Hover over the two divs below, to see the entire text.</p>
+              <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+              <br>
+              <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+              <h1 style="clear:left">The word-wrap Property</h1>
+
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<h1 style="clear: both;">Break at kepping all and Breaking All</h1>
+<p class="tt1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+<p class="tt2">This paragraph contains some text. The lines will break at any character.</p>
+
+
+<h1>Class Work</h1>
+  <div class="sh1" align="center">M
+  </div>
+  <div class="sh2" align="center">M
+</div>
+<div class="sh3" align="center">M
+</div>
+<div class="sh4" align="center">M
+</div>
+
+<h1>Example -no-blur,no-spread</h1>
+
+    <div class="classbs sh5">
+        <h2>Sumit Patil no-blur</h2>
+    </div>
+    <br><br><br>
+    <div class="classbs sh6">
+        <h2>Sumit Patil with blur</h2>
+    </div>
+
+
+</body>
+</html>

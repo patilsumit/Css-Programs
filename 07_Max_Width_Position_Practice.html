@@ -1,0 +1,168 @@
+<!-- ----------------------------------------------------------------------
+Program       :Maxwidth And Position Practice
+Date          :1-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max Width</title>
+    <style type="text/css">
+    .ex1
+    {
+        width:800px;
+        border:2px solid forestgreen;
+        margin: auto;
+    }
+    .ex2
+    {
+        max-width:800px;
+        margin: auto; 
+        border:2px solid forestgreen; 
+    }
+    .static
+    {
+        border: 2px solid red;
+        position: static;
+    }
+    .relative
+    {
+        border: 2px solid red;
+        position: relative;
+        left: 25px; 
+        right:100px;
+        top:50px;
+        height: 200px;
+        width: 400px;
+    }
+    .fixed
+    {
+        position: fixed;
+        width: 250px;
+        border: 2px solid grey;
+        bottom: 0;
+        right: 0;
+    }
+    .absolute
+    {
+        position: absolute;
+        border:2px solid green; 
+        width: 200px;
+        height: 100px;
+        top: 80px;
+        bottom: 0;
+        right: 10px;
+    }
+    .sticky
+    {
+        border: 3px solid blue;
+        background-color: chartreuse;
+        padding: 5px;
+        top:5px;
+        position: sticky;
+    }
+    img
+    {
+        position: absolute;
+        left: 1;
+        bottom: 10;
+        
+        z-index: -1; 
+   }
+   
+   
+    </style>  
+</head>
+<body>
+    <!-- MAx Width is use for only for responsive perpose -->
+    <p class="ex1">This Is Simple Width 500px</p>
+    <p class="ex2">This Is Max  Width 500px</p>
+
+    <!-- Css Position Property   -->
+    <h1>Overlapping Elements</h1>
+         <img src="apple-black-and-white-black-and-white-169573.jpg" height="140" width="100">
+         <p>Sumit Patil Is Back-End Developer</p>
+<br><br><br><br><br><br>
+    <div class="static">
+        <!-- Static Position Is Not effect on top bootom left right side -->
+        Sumit Patil Static Postion
+    </div>    
+    <br>
+    <div class="relative">
+            <!-- element with position: relative; is positioned relative to its normal position. -->
+            <!-- Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it 
+                to be adjusted away from its normal position. -->
+            Sumit Patil Postion Left relative Position
+        <div class="absolute">
+                <!-- An element with position: absolute; is positioned relative to the nearest positioned 
+                    ancestor (instead of positioned relative to the viewport, like fixed) -->
+        sumit patil is absolute
+        </div>            
+                    </div><br>
+        <div class="fixed">
+                <!-- An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+                     The top, right, bottom, and left properties are used to position the element. -->
+            Sumit Patil Fixed Position
+        </div>
+        <br><br>
+        <div class="sticky">
+            SSP Patil Is Sticky
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quaerat possimus consequatur assumenda quibusdam molestiae ducimus aperiam! Animi eius sint ab modi, vero quam quo inventore praesentium repellat alias repellendus!</p>
+           <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non dolorum magni. Similique laboriosam, aliquid, libero amet accusantium qui, corporis recusandae minima distinctio consequuntur totam alias? Numquam, neque reiciendis. Asperiores.
+</p>
+    <p>            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis id voluptatibus porro atque maiores eos, aut fuga, at est accusantium sint quasi commodi nobis cum qui saepe minus voluptatem.</p>
+<p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quaerat quidem dicta facilis. Quod accusantium nemo quisquam quae amet magnam nostrum esse ipsa nobis, quas modi maxime deserunt! Officiis.
+</p>
+<p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+            </p>
+            <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                </p>
+
+                <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                    </p>
+
+                    <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                        </p>
+
+                        <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                            </p>
+
+                            <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                </p>
+
+                                <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                    </p>
+
+                                    <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                        </p>
+
+                                        <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                            </p>
+                                
+                                            <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                                </p>
+
+                                                <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                                    </p>
+
+                                                    <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                                        </p>
+                                            
+
+                                                        v
+                                                        <p>                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quisquam aperiam asperiores officiis, impedit ea cumque sed architecto eos nostrum quod dolore dignissimos? Delectus ullam non assumenda iusto eaque rem!
+                                                            </p>
+                                                
+        </div>   
+         
+</body>
+</html>

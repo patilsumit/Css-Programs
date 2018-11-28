@@ -1,0 +1,150 @@
+<!-- ----------------------------------------------------------------------
+Program       :Basic Css Box Model Practice
+Date          :30-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Box Model</title>
+    <style type="text/css">
+        .div1
+        {
+            margin: 25px;
+            border:25px solid green;
+            width:300px;
+            padding:25px;  
+        }
+        .div2
+        {
+           width:320px;
+           border:5px solid gray;
+           margin:0;
+           padding: 10px;
+        }
+        .div3
+        {
+            border:2px solid red;
+            outline: #4CAF50 groove 10px;
+            margin: auto;
+            padding:10px;
+            text-align: center;
+        }
+        .div4
+        {
+            border:2px solid green;
+            outline:red dotted 10px;
+            margin-top:30px;
+            padding:10px;
+            text-align: center;
+        }
+        p
+        {
+            outline-style:double;
+            outline-color:blue; 
+            outline-width: 6px;
+            margin-left: 15px;
+            outline-offset: 5px;
+            border: 2px solid red;
+        }
+        p.ex1 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+}
+
+p.ex2 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+}
+
+p.ex3 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+}
+
+p.ex4 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+}
+.sh
+{
+    outline:thick ridge pink;
+}
+.ofset
+{
+    outline:10px ridge pink;
+    outline-offset: 15px;
+}
+.div-non-sized
+{
+    border: 2px solid red;
+     padding: 10px; 
+    margin: 30px; 
+    height: 100px;
+    width: 100px;
+}
+.div-sized
+{
+    height: 100px;
+    width: 100px;
+    border: 5px inset blue;
+     padding: 10px; 
+     border-top-color:#00ff00; 
+     margin: 30px; 
+    box-sizing: border-box; 
+}
+    </style>   
+</head>
+<body>
+    <h2>Css Box Model</h2>
+    <div class="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa asperiores minima eligendi, ab quidem omnis neque aliquid. Praesentium, minus? Perspiciatis error delectus quas minus neque nostrum, accusantium perferendis nobis sequi!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nihil ab veritatis quasi consequuntur quidem hic eveniet facilis ipsum, nesciunt praesentium vitae voluptates laboriosam omnis dolores atque nisi debitis delectus.
+    </div> 
+    <h2>Image Width Height Element</h2>
+    <img src="apple-black-and-white-black-and-white-169573.jpg" height="263px" width="350px">
+    <div class="div2">
+     Molestiae, asperiores perspiciatis maxime labore dolorem, ullam officiis omnis nesciunt debitis dolore similique neque quo eos quasi, ipsa maiores perferendis eum! Illo!
+    </div>       
+    <h2>OutLine</h2>
+    <div class="div3">
+            Molestiae, asperiores perspiciatis maxime labore dolorem, ullam officiis omnis nesciunt debitis dolore similique neque quo eos quasi, ipsa maiores perferendis eum! Illo!
+    </div>
+    <div class="div4">
+            Molestiae, asperiores perspiciatis maxime labore dolorem, ullam officiis omnis nesciunt debitis dolore similique neque quo eos quasi, ipsa maiores perferendis eum! Illo!
+    </div><br><br>
+    <h2>Outline Color Outline-style outline-width</h2>
+    <p>
+            Molestiae,  labore dolorem, ullam officiis omnis nesciunt debitis dolore similique neque quo eos quasi, ipsa maiores perferendis eum! Illo!
+    </p><br><br><br>
+    <h1>Different Widts</h1>
+    <p class="ex1">A thin outline.</p>
+    <p class="ex2">A medium outline.</p>
+    <p class="ex3">A thick outline.</p>
+    <p class="ex4">A 4px thick outline.</p>
+    <h1>Shorthand Property</h1>
+    <p class="sh">shortand Property</p>
+
+    <h1>Outline Offset</h1>
+    <!-- The outline-offset property adds space between an outline and the edge/border of an element.  -->
+    <p class="ofset">Patil Is BRand</p>
+    <div class="div-non-sized">
+        Sumit Patil Non Sized 
+    </div>
+    <div class="div-sized">
+        Sumit Patil Box Sized 
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- ----------------------------------------------------------------------
+Program       :Basic Css Border Margin Padding Radius Practice
+Date          :29-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border Practice</title>
+    <style type="text/css">
+
+    p.dotted {border-style: dotted;}
+    p.dashed {border-style: dashed;}
+    p.solid {border-style: solid;}
+    p.double {border-style: double;}
+    p.groove {border-style: groove;}
+    p.ridge {border-style: ridge;}
+    p.inset {border-style: inset;}
+    p.outset {border-style: outset;}
+    p.none {border-style: none;}
+    p.hidden {border-style: hidden;}
+    p.mix {border-style: dotted dashed solid double;}
+    p.chk
+    {
+        border-style: solid;
+        border-top-width: 10px;
+        border-bottom-width:10px;
+        border-left-width: 15px;
+        border-right-width: 10px;
+        border-width: 25px;
+        border-width:thick;
+        border-width: 2px 4px 10px 15px; 
+
+        border-color: brown;
+        border-top-color: chocolate;
+        border-top:10px dotted blue;
+        border-bottom:10px inset skyblue; 
+    }
+    p.new
+    {
+       border-radius: 0.5em;
+       border: 4px solid blue;
+       margin-top:50px;
+       margin-left: 35px;
+       margin-right: 150px;
+       margin-bottom: 50px;
+       /* Margin Auto Is Automatically Consider */
+       margin:auto;   
+    }
+
+    div
+    {
+
+       border: 2px solid red; 
+        padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 120px; 
+    width:500px;
+    box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+        <p class="dotted">A dotted border.</p>
+        <p class="dashed">A dashed border.</p>
+        <p class="solid">A solid border.</p>
+        <p class="double">A double border.</p>
+        <p class="groove">A groove border.</p>
+        <p class="ridge">A ridge border.</p>
+        <p class="inset">An inset border.</p>
+        <p class="outset">An outset border.</p>
+        <p class="none">No border.</p>
+        <p class="hidden">A hidden border.</p>
+        <p class="mix">A mixed border.</p>
+         <br>
+         <p class="chk">Sumit Patil Full Stack Developer </p>
+         <p class="new">Lucky Patil Node Developer</p>
+ <h1>Padding Practice border boxing</h1>
+ <!-- Border Box Property Related With Width proeprty -->
+         <div>
+            Sumit Is Java FullStack Developer
+         </div>
+</body>
+</html>

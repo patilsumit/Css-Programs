@@ -1,0 +1,61 @@
+<!-- ----------------------------------------------------------------------
+Program       :Css 3D Transforms
+Date          :09-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Transform</title>
+    <style> 
+    div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#myDiv {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(150deg); /* Standard syntax */
+}
+#mydiv1
+{
+    -webkit-transform: rotateY(130deg); /* Safari */
+    transform: rotateY(130deg);
+}
+#mydiv2
+{
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg);
+}
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <h3>rotateX()</h3>
+    <h3>rotateY()</h3>
+    <h3>rotateZ()</h3>
+
+    <h1>rotateX() Method</h1>
+    <div>
+            This a normal div element.
+    </div>
+            
+    <div id="myDiv">
+       This div element is rotated 150 degrees.
+    </div>
+    <h1>rotateY() Method</h1>
+    <div id="mydiv1">
+            This div element is rotated 150 degrees.
+         </div>
+      <h1>rotateZ() Method</h1>  
+         <div id="mydiv2">
+                This div element is rotated 150 degrees.
+         </div>
+</body>
+</html>

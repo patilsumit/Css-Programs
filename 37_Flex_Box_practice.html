@@ -1,0 +1,51 @@
+<!-- ----------------------------------------------------------------------
+Program       :Flex Practice
+Date          :17-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box</title>
+    <style>
+        .flex-container
+        {
+            display:flex;
+
+             /* width:70%; */
+            /*row | row-revdrse | column | column-reverse - property of flex-direction*/
+             flex-direction:row;
+            /*nowrap | wrap | wrap-reverse -property of flex-wrap*/
+               
+              flex-wrap:wrap; 
+             /*Short-hand property flex-flow */
+             /* flex-flow:row wrap;   */
+
+            border:2px solid red;  
+        }
+        .flex-item
+        {
+            width:30%; 
+            border:2px solid blue; 
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container" style="height:200px ">
+        <div class="flex-item">ITEM1</div>
+        <div class="flex-item">ITEM1</div>
+        <div class="flex-item">This ITEM2</div>
+        <div class="flex-item">This ITEM2</div>
+        <div class="flex-item">ITEM3-this
+           is
+           item 
+           three
+        </div>
+        <div class="flex-item">ITEM4 Is Responsive</div>
+    </div>
+</body>
+</html>

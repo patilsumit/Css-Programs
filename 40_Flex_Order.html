@@ -1,0 +1,47 @@
+<!-- ----------------------------------------------------------------------
+Program       :Flex order Practice
+Date          :17-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex order Box</title>
+    <style>
+        .flex-container
+        {
+            display:flex;     
+            border:2px solid red;  
+        }
+        .flex-item
+        {
+            
+            border:2px solid blue; 
+        }
+        .order1
+        {
+            order:3; 
+        }
+        .order2
+        {
+            order:1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container" style="height:200px ">
+        <div class="flex-item order1">ITEM1</div>
+        <div class="flex-item order2">This ITEM2</div>
+        <div class="flex-item order3">ITEM3-this
+           is
+           item 
+           three
+        </div>
+        <div class="flex-item">ITEM4 Is Responsive</div>
+    </div>
+</body>
+</html>

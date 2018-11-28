@@ -1,0 +1,97 @@
+<!-- ----------------------------------------------------------------------
+Program       :Css 3 Attribute Practice
+Date          :3-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atttribute</title>
+     <style>
+         * [title]
+         {
+             color: red;
+         } 
+         input[type="email"]
+         {
+             background-color: yellow;
+         }
+         [title~="cat"] 
+         /* Separater ~  */
+         {
+             background-color: aqua;
+             color: royalblue;
+             font-style: italic;
+         }
+         [lang|="en-US"]
+         {
+             /* Prefix Attribute */
+             color:blue;
+             font-weight: bold;
+         }
+         [title^="test"]
+         {
+             color: blueviolet;
+             font-weight: bold;
+         }
+         [title$=".in"]
+         {
+             color: magenta;
+             font-style: italic;
+         }
+         [href*="big"]
+         {
+             color: goldenrod;
+             font-weight: 900;
+         }
+          [title*="big"] /* ["big"] i not support in vs code */
+         {
+             color: pink;
+             font-weight: 900;
+         }
+     </style>
+
+</head>
+<body>
+    <p title="Fill In The Form">This Is My Para</p>
+    <form>
+        <label>Name:<input type="text" title="Please Enter Title">
+         </label>   
+         <label>Email:<input type="email" title="Please Enter Email">
+         </label>   
+    </form>    
+
+    <p title="cat dog mouse">THis Cat Para 1</p>
+    <p title="moni deni ">THis Cat Para 2</p>
+    <p title="cat dog mouse">THis Cat Para 3</p>
+
+    <h1>Prefix Attribute</h1>
+    <p lang="en">This General English</p>
+    <p lang="en-US">This General American English</p>
+    <p lang="en-GB">This is for Great British English</p>
+    <p lang="en-AU">This is for Australian English</p>
+    <p lang="es">This is for Spanish</p>
+    <p lang="fr">This is for french</p>
+
+    <h1>Begin Attribute</h1>
+    <p title="patil test">fsdfg ggdffg fgdgg dfgfdgg </p>
+    <p title="test patil">fsdfg ggdffg fgdgg dfgfdgg </p>
+
+    <h1>.in Attribute</h1>
+    <p title="www.google.com">THis Cat Para 3</p>
+    <p title="www.google.co.in">THis Para .in Attr </p>
+
+    <h1>Sub String</h1>
+    <a href="http://www.bigbasket.com">Big Basket</a>
+    <a href="http://www.sumitpatil.epizy.com">Sumit Patil</a>
+    <a href="http://www.tradesmonk.com">tradesmonk</a>
+    <h2>Case Senstive</h2>
+<br>
+    <a href="A big basket">i Case Senstive</a><br>
+    <a href="A bIg basket">capital BIG not working</a>
+</body>
+</html>

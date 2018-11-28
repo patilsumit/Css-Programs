@@ -1,0 +1,82 @@
+<!-- ----------------------------------------------------------------------
+Program       :Basic Css Background Practice
+Date          :29-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background</title>
+    <style type="text/css">
+    body
+    {
+        background-image: url(apple-black-and-white-black-and-white-169573.jpg);
+        background-position:right top;  
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+        background-size:400px 400px 400px; 
+        background-size:contain; /* Also cover property*/
+        background-position: center left;
+        background-position-x:1em;
+        background-position-y: 1em;
+        background-clip: padding-box;         
+
+         
+        /* Shorthand Property */
+        /* background: url() yellow fixed cover 20px/100px 200px; */
+    }
+    th
+    {
+        font-size: 25px;
+        color: maroon;
+    }
+    td
+    {
+        text-align: center;
+        width: 250px;
+        height: 150px;
+        font-size: 25px;
+    }
+    img
+    {
+        background-repeat: repeat;
+        background-position:center left;
+    }
+    </style>
+</head>
+<body>
+     <table style="border:1;text-align: center ">
+         <tr>
+             <th><b>hsl(0,100%,50%)</b></th>
+             <th><b>hsl(120,100%,50%)</b></th>
+             <th><b>hsl(120,100%,25%)</b></th>
+             <th><b>hsl(120,100%,75%)</b></th>
+             <th><b>hsl(120,60%,70%)</b></th>
+           </tr> 
+           <tr>
+               <td style="background-color:hsl(0,100%,50%) ;">
+                   <br><br><br><br>
+                   </td>
+                   <td style="background-color:hsl(120,100%,50%) ;">
+                        <br><br><br><br>
+                        </td>
+                        <td style="background-color:hsl(120,100%,25%) ;">
+                                <br><br><br><br>    <br><br><br><br>
+                                        </td>
+      
+                                </td>
+                                <td style="background-color:hsl(120,100%,75%) ;">
+                                                                      <td style="background-color:hsl(120,60%,70%) ;">
+                                                <br><br><br><br>
+                                                </td>
+           </tr>    
+         </table>   
+         <h1>Hsla Color With Opacity</h1>
+          <p style="background-color:hsla(120,100%,50%,0.3);padding: 15px">Sumit Patil</p>
+         <img src="2.jpg" width="400px" height="400px" >
+</body>
+</html>

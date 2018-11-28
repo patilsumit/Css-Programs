@@ -1,0 +1,248 @@
+<!-- ----------------------------------------------------------------------
+Program       :Grid Layout Practice
+Date          :14-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layout Practice</title>
+    <style>
+        .grid>div
+        {
+            background: silver;
+            padding: 1em;
+        }
+        .grid>div:nth-child(odd)
+        {
+            background: gray;
+        }
+        .grid
+        {
+            display:grid;
+            grid-template-columns:30% 40% 30%;  
+            grid-column-gap:30px;
+            border: 2px solid red;
+            grid-row-gap:25px;  
+        }
+        .grid1
+        {
+            display:grid;
+            grid-template-columns:repeat(3 ,20% 40%);  
+            grid-column-gap:30px;
+            border: 2px solid blueviolet;
+            grid-row-gap:25px;  
+        }
+        .grid1 > div
+        {
+            background: silver;
+            padding: 1em;
+        }
+        .grid1>div:nth-child(odd)
+        {
+            background: gray;
+        }
+        .grid2
+        {
+            display:grid;
+            width:80%; 
+            grid-template-columns:2fr 2fr;
+            /* grid-template-columns:repeat(4,1fr);   */
+            grid-column-gap:25px;
+            border: 2px solid yellowgreen;
+            grid-row-gap:25px;
+            opacity: 0.8;  
+        
+        }
+        .grid2 > div
+        {
+            background: red;
+            padding: 1em;
+        }
+        .grid2>div:nth-child(odd)
+        {
+            background: green;
+        }
+        .grid3
+        {
+            display:grid;
+             grid-template-columns:repeat(3,1fr);
+            grid-column-gap:25px;
+            border: 2px solid yellowgreen;
+            grid-row-gap:20px;
+            grid-auto-rows:minmax(200px,auto); 
+
+        
+        }
+        .grid3 > div
+        {
+            background: red;
+            padding: 1em;
+        }
+        .grid3>div:nth-child(odd)
+        {
+            background: green;
+        }
+        .grid4
+        {
+            display:grid;
+             /* grid-template-columns:repeat(3,2fr); */
+             grid-template-columns:2fr 2fr 3fr 5fr 2fr 1fr;
+            grid-column-gap:25px;
+            border: 2px solid blue;
+            grid-row-gap:20px;
+            grid-auto-rows:minmax(200px,auto); 
+        }
+        .grid4 > div
+        {
+            background: red;
+            padding: 1em;
+        }
+        .grid4>div:nth-child(odd)
+        {
+            background: green;
+        }
+        .nested
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap:10px; 
+        }
+        .nested>div
+        {
+            border:2px solid blue; 
+        }
+        .grid-container
+        {
+            display: grid;
+            grid-gap:50px 50px;
+            grid-template-columns:auto auto auto;
+            background-color: #808080;
+            padding: 10px;  
+        }
+        /* Set Property The Grid Items*/
+        .grid-container>div
+        {
+            background-color: rgba(242, 242, 242, 0.8);
+            border:1px solid rgba(0,0,0,0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .spanning-column-item
+        {
+            grid-column-start:1;/* Start With Column line 1*/
+            grid-column-end: 3; /* end at column line 3 */
+
+            /* ShortHand Property*/
+            /* grid-column: 1/3;
+            grid-column:2 / span 2;  */
+        }
+        .spanning-row-item
+        {
+            grid-row-start:2; /* Start with row line 2*/
+            grid-row-end:4; /* End at row line 4*/
+
+            /* Shorthand Property*/
+            /*grid-row: 2 / 4; */          /* Start with row line 2,end at row line 4*/
+            /*grid-row: span 2; */          /* start with row line 2*/
+        }
+        .wrapper
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap:1em;
+            justify-items:center;  
+            align-items:center;   /*Not Working*/ 
+        }
+        .wrapper>div
+        {
+            background: red;
+            padding: 1em;
+        }
+        .wrapper>div:nth-child(odd)
+        {
+            background: green;
+        }
+        .box
+        {
+             justify-self: center; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+    </div>
+    <h1>Use repeat Percetange 100%</h1>
+    <!-- Second Type Use Grid -->
+    <div class="grid1">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            
+
+    </div>
+    <h1>Use Fraction Grid</h1>
+    <!-- Third Type Use Grid -->
+    <div class="grid2">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+    </div>
+    <h1>Grid Layout With Rows</h1>
+    <div class="grid3">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+    </div>
+    <h1>Nested Grid</h1>
+    <div class="grid4">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deserunt ullam quisquam repellat animi sint!
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium, eaque sapiente aperiam deleniti quod perspiciatis ex! Beatae, illum assumenda perferendis consectetur voluptatum magni quam officia quos quidem praesentium hic!</div>
+        <div class="nested">
+            <div >Sharada</div>
+            <div >Sharada</div>
+            <div >Sharada</div>
+            <div >Sharada</div>
+            <div >Sharada</div>
+
+        </div>
+    </div>
+    <h1>Grid Layout With Spanning</h1>
+    <div class="grid-container">
+         <div class="spanning-column-item">Grid item 1</div>
+         <div class="grid-item">Grid item 2</div>
+         <div class="spanning-row-item">Grid item 3</div>
+         <div class="grid-item">Grid item 4</div>
+         <div class="grid-item">Grid item 5</div>
+         <div class="grid-item">Grid item 6</div>
+         <div class="grid-item">Grid item 7</div>
+    </div>
+    <h1>Grid Justify Items</h1>
+     <div class="wrapper">
+         <div class="box box1">Box 1</div>
+         <div class="box box2">Box 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptates.
+         </div>
+         <div class="box box3">Box 3</div>
+         <div class="box box4">Box 4</div>
+     </div>
+</body>
+</html>

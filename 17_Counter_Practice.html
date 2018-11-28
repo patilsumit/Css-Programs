@@ -1,0 +1,97 @@
+<!-- ----------------------------------------------------------------------
+Program       :Counter Paractice
+Date          :06-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter & Radius </title>
+    <style>
+        body {
+    counter-reset: section;
+}
+
+h1 {
+    counter-reset: subsection;
+}
+
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+#rcorners1 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
+#rcorners3 {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+} 
+
+#rcorners4 {
+    border-radius: 15px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+    
+        </style>
+</head>
+<body>
+    
+
+    <h1>HTML tutorials:</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    
+    <h1>Scripting tutorials:</h1>
+    <h2>JavaScript</h2>
+    <h2>VBScript</h2>
+    
+    <h1>XML tutorials:</h1>
+    <h2>XML</h2>
+    <h2>XSL</h2>
+
+     
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1"></p>
+    
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2"></p>
+    
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3"></p>
+    
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4"></p>
+     
+    </body>
+</html>

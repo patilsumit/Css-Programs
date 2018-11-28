@@ -1,0 +1,44 @@
+<!-- ----------------------------------------------------------------------
+Program       :Flex Align Practice
+Date          :17-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Align Box</title>
+    <style>
+        .flex-container
+        {
+            display:flex;
+            height:200px;
+            flex-wrap:wrap;
+           /*flex-start | flex-end | center | strentch | baseline*/
+            align-items:stretch;  
+                
+            border:2px solid red;  
+        }
+        .flex-item
+        {
+            
+            border:2px solid blue; 
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container" style="height:200px ">
+        <div class="flex-item">ITEM1</div>
+        <div class="flex-item">This ITEM2</div>
+        <div class="flex-item">ITEM3-this
+           is
+           item 
+           three
+        </div>
+        <div class="flex-item">ITEM4 Is Responsive</div>
+    </div>
+</body>
+</html>

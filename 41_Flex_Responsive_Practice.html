@@ -1,0 +1,43 @@
+<!-- ----------------------------------------------------------------------
+Program       :Flex Responsive Practice
+Date          :18-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Flex</title>
+    <style>
+        .main
+        {
+            display:flex;
+             max-width:900px;  
+        }
+        section
+        {
+            background-color: blue;
+            flex-grow:3;  
+        }
+        aside
+        {
+            background-color:red;
+             flex-grow:1;   
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <section class="col">
+            <h2>CSS Grow</h2>
+        </section>
+        <aside class="col">
+           <h2>How I Learned to Stop Worrying and Love the Flexbox.</h2>
+        </aside>
+       
+    </div>
+</body>
+</html>

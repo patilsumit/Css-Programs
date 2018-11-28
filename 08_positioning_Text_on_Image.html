@@ -1,0 +1,190 @@
+<!-- ----------------------------------------------------------------------
+Program       :Position On the Text Practice
+Date          :2-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position On The Text</title>
+    <style>
+        .container
+   {
+       position: relative;
+   }
+   .topleft
+   {
+       position: absolute;
+       top: 15px;
+       left: 20px;
+       font-size: 3em;
+   }
+   .topright
+   {
+       position: absolute;
+       top: 15px;
+       right: 20px;
+       font-size: 3em;
+   }
+   .bottomleft
+   {
+       position: absolute;
+       left: 15px;
+       bottom: 20px;
+       font-size: 3em;
+   }
+   .bottomright
+   {
+       position: absolute;
+       right: 15px;
+       bottom: 20px;
+       font-size: 3em;
+   }
+   .Center
+   {
+       position: absolute;
+       top:50%;
+       left: 0;
+       width: 100%;
+       text-align: center;
+       font-size: 3em;
+   }
+   .of
+   {
+       height: 100px;
+       width:500px;
+       border: 1px solid gray;
+       overflow: scroll;
+       padding: 15px;
+   }
+   .ofhidden
+   {
+       height: 100px;
+       width:500px;
+       border: 1px solid gray;
+       overflow: hidden;
+       padding: 15px;
+   }
+   .ofvisible
+   {
+    height: 100px;
+       width:500px;
+       border: 1px solid gray;
+       overflow: visible;
+       padding: 15px;
+   }
+   .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+}
+
+.flex-container .box {
+      background-color: #f1f1f1;
+      width: 50%;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:50%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+                <img src="apple-black-and-white-black-and-white-169573.jpg" style="opacity: 0.5;" height="500px" width="100%"> 
+                <div class="topleft">
+                  Top Left
+                 </div>
+                 <div class="topright">
+                        Top Right
+                 </div>
+                 <div class="bottomleft">
+                        Bottom Left
+                 </div>
+                 <div class="bottomright">
+                        Bottom Right
+                 </div> 
+                 <div class="Center">
+                       Center
+                 </div>
+        </div>  
+        <!-- Css Overflow property Scroll and auto is same  -->
+        <h1>Overflow scroll</h1>
+        <div class="of">
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita, natus asperiores nihil quisquam a cum ea dicta pariatur, obcaecati voluptas inventore architecto ex fuga quasi quod dignissimos blanditiis eum.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eaque officiis id doloremque dolores expedita unde quo nemo facilis quidem maxime, quaerat sit tempore eius sed blanditiis, voluptatibus, tempora nostrum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis cum iure cupiditate ipsam id temporibus asperiores. A laborum molestiae soluta accusamus vero quae officia quo! Maiores, quaerat. Dicta, nobis.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, magnam. Qui unde architecto labore ea, vero a atque facilis voluptates excepturi cum voluptate dolorum corrupti laudantium soluta officia molestias laborum.
+            </p>
+        </div>
+        <h1>Overflow hidden</h1>
+        <!-- Contain display only for cliped -->
+        <div class="ofhidden">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita, natus asperiores nihil quisquam a cum ea dicta pariatur, obcaecati voluptas inventore architecto ex fuga quasi quod dignissimos blanditiis eum.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eaque officiis id doloremque dolores expedita unde quo nemo facilis quidem maxime, quaerat sit tempore eius sed blanditiis, voluptatibus, tempora nostrum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis cum iure cupiditate ipsam id temporibus asperiores. A laborum molestiae soluta accusamus vero quae officia quo! Maiores, quaerat. Dicta, nobis.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, magnam. Qui unde architecto labore ea, vero a atque facilis voluptates excepturi cum voluptate dolorum corrupti laudantium soluta officia molestias laborum.
+                </p>
+            </div>
+            <h1>Overflow Visible</h1>
+            <div class="ofvisible">
+                <!-- Contain Display outside -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate expedita, natus asperiores nihil quisquam a cum ea dicta pariatur, obcaecati voluptas inventore architecto ex fuga quasi quod dignissimos blanditiis eum.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eaque officiis id doloremque dolores expedita unde quo nemo facilis quidem maxime, quaerat sit tempore eius sed blanditiis, voluptatibus, tempora nostrum!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis cum iure cupiditate ipsam id temporibus asperiores. A laborum molestiae soluta accusamus vero quae officia quo! Maiores, quaerat. Dicta, nobis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, magnam. Qui unde architecto labore ea, vero a atque facilis voluptates excepturi cum voluptate dolorum corrupti laudantium soluta officia molestias laborum.
+                    </p>
+                </div>
+                <br><br><br/><br/><br/><br/>
+                <br/> <br/>
+                               <h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+  <div class="box">Box 2 - My height will follow Box 1.</div>
+</div>
+
+<p>Try to resize the browser window to see the flexible layout.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+<ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>

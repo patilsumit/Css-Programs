@@ -1,0 +1,63 @@
+<!-- ----------------------------------------------------------------------
+Program       :Grid Layout Practice
+Date          :15-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .grid-container
+        {
+            display: grid;
+            grid-gap:50px 50px;
+            grid-template-columns:auto auto auto auto;
+            background-color:#808080;
+            padding: 10px;  
+        }
+        .grid-container>div
+        {
+            background-color: rgba(242, 242, 242, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding:20px;
+            font-size: 30px; 
+        }
+        .grid-area-item
+        {
+           grid-area:1 / 2 / 4 / 4; 
+           text-align: center;
+        }
+        .grid-item 
+        {
+            background-color:rgba(242, 242, 242, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size:30px;
+            text-align: center;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    
+            <div class="grid-container">
+                    <div class="grid-area-item">Grid item 1</div>
+                    <div class="grid-item">Grid item 2</div>
+                    <div class="grid-item">Grid item 3</div>
+                    <div class="grid-item">Grid item 4</div>
+                    <div class="grid-item">Grid item 5</div>
+                    <div class="grid-item">Grid item 6</div>
+                    <div class="grid-item">Grid item 7</div>
+                    <div class="grid-item">Grid item 8</div>
+                    <div class="grid-item">Grid item 9</div>
+                    <div class="grid-item">Grid item 10</div>
+                    <div class="grid-item">Grid item 11</div>
+               </div>
+
+</body>
+</html>

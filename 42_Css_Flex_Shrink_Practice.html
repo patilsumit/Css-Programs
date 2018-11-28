@@ -1,0 +1,60 @@
+<!-- ----------------------------------------------------------------------
+Program       :Flex Shrink Practice
+Date          :18-9-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Shrink</title>
+    <style>
+        .flex-container
+        {
+            display:flex;
+            border:1px solid red;  
+        }
+        .side1
+        {
+            border:5px solid blue;
+            background-color: blueviolet;
+            width:450px;
+            flex-shrink:1; /*Deafult value 0*/   
+        }
+        .middle
+        {
+            border:5px solid darkgreen;
+            background-color:brown; 
+            width:450px; 
+            flex-shrink:2; 
+        }
+        .side2
+        {
+            border:5px solid blue;
+            background-color:bisque;
+            width:450px;  
+            flex-shrink:3;  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="side1">
+            ITEM1
+        </div>
+        <div class="middle">
+            ITEM2
+        </div>
+        <div class="side2">
+            ITEM3-this 
+            <br>is 
+            <br>item 
+            <br>three 
+        </div>
+    </div>
+</body>
+</html>
